@@ -1,0 +1,137 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.app__header {
+  height: 7.5vh;
+  margin: 7.5% 0;
+  width: 100vw;
+}
+
+.app__h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.app__h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.app__main {
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5% 0;
+  width: 100vw;
+}
+
+.app__search {
+  width: 250px;
+  margin: 5% 0;
+}
+
+.app__section {
+  height: 20vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+.app__images {
+  width: 60%;
+}
+
+.app__footer {
+  position: absolute;
+  top: 95vh;
+  left: 0;
+  height: 5vh;
+  width: 100vw;
+  text-align: center;
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .app_header {
+    height: 5vh;
+    margin: 0;
+  }
+
+  .app__search {
+    margin: 1.5% 0;
+  }
+
+  .app__main {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .app__header {
+    height: 5vh;
+    margin: 3.5% 0;
+  }
+
+  .app__h1 {
+
+    font-size: 23px;
+  }
+
+  .app__h2 {
+
+    font-size: 17px;
+  }
+
+  .app__main {
+    height: 50vh;
+    margin: 5% 0;
+    width: 100vw;
+  }
+
+  .app__search {
+    width: 450px;
+    margin: 1% 0;
+  }
+
+  .app__main {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .app__h1 {
+
+    font-size: 25px;
+  }
+
+  .app__h2 {
+
+    font-size: 19px;
+  }
+
+  .app__images {
+    width: 70%;
+  }
+
+  .app__section {
+    font-size: 18px;
+
+  }
+}
